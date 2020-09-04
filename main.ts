@@ -13,7 +13,7 @@ enum select_xyz {
     }
 
 
-//% color="#3943c2" block="上教大_体育_0.94"
+//% color="#3943c2" block="上教大_体育_0.96"
 namespace matubara_blocks {
 
 
@@ -32,7 +32,7 @@ namespace matubara_blocks {
 
 
  //% weight=39 blockId=x_ude_more block="X軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
- //% limit.min=90 limit.max=90
+ //% limit.min=-90 limit.max=90
     export function x_ude_more (limit:number,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:

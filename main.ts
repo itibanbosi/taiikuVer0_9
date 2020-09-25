@@ -22,7 +22,7 @@ namespace matubara_blocks {
   export function axis( xyz:select_xyz){
     switch(xyz){
         case select_xyz.X:
-        return Math.round(input.acceleration(Dimension.X)/1100*90);
+        return Math.round(input.acceleration(Dimension.X)/1100*90)+90;
         case select_xyz.Y:
         return Math.round(input.acceleration(Dimension.Y)/1100*90);
         case select_xyz.Z:
@@ -36,7 +36,7 @@ namespace matubara_blocks {
     export function x_ude_more (limit:number,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
-        if ((input.acceleration(Dimension.X)/1100*90) > limit )
+        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit )
             {
             return true;
             }
@@ -45,7 +45,7 @@ namespace matubara_blocks {
             return false;
             }
         case daisyou.小さい :
-            if ((input.acceleration(Dimension.X)/1100*90) < limit ){
+            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit ){
             return true;
             }
             else

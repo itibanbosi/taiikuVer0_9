@@ -96,7 +96,7 @@ namespace matubara_blocks {
     }
     }   
 
- //% color="#ffa800" weight=23 blockId=vib_kanketu block="間欠しん動" group="機能"
+ //% color="#ffa800" weight=23 blockId=vib_kanketu block="振動する（音なし）" group="機能"
   export function vib_kanketu() {
     let i=0;
     for (let i=1 ; i<3 ;i++)　{
@@ -124,7 +124,7 @@ namespace matubara_blocks {
 
 
 
- //% color="#ffa800" weight=12 blockId=vib block="振動する |%mode|" group="機能"
+ //% color="#ffa800" weight=12 blockId=vib block="振動 |%mode|" group="機能"
   export function vib(mode: vibrater_onoff) {
             if (mode == vibrater_onoff.ON ) {
             return pins.digitalWritePin(DigitalPin.P1, 1);

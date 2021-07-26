@@ -4,7 +4,8 @@
     "description": "A MakeCode package to use sonar sensors",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -14,6 +15,10 @@
         "test.ts"
     ],
     "public": true,
+    "targetVersions": {
+        "target": "4.0.9",
+        "targetId": "microbit"
+    },
     "supportedTargets": [
         "microbit"
     ],
